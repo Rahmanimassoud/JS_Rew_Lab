@@ -43,13 +43,13 @@ const fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"];
 // 3. Write a function that will search this array for your favorite fruit. If your favorite fruit isn't found, add it!
 
 const findFavFruit = (arr)=> {
-    let favorite = "Kewi";
+    let favorite = "Apple";
     let isFavPresent = false;
 
     arr.forEach((element)=>{
         if(element === favorite){
             isFavPresent = true;
-            console.log("It's already in the array")
+            console.log(favorite + " It's already in the array")
             return;
         }
     });
@@ -59,13 +59,19 @@ const findFavFruit = (arr)=> {
     }    
 };
 
-// console.log(findFavFruit(fruits));
+// findFavFruit(fruits);
 
  
 
-// const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"];
 
 // 4. write a function that will shorten each string to just it's first 3 characters ("January" turns into  "Jan")
+const shortenStr = string => {
+    const shortenString  = string.map(i => i.substring(0, 3));
+    return shortenString;
+};
+// const newMonth = shortenStr(months);
+// console.log(newMonth);
 
 
  
