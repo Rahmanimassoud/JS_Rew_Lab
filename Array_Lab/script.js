@@ -76,6 +76,15 @@ const shortenStr = string => {
 
  
 
-// const mixedData = [42, 'hello', true, 3.14, 'world', false, null, undefined, 'goodbye', 7];
+const mixedData = [42, 'hello', true, 3.14, 'world', false, null, undefined, 'goodbye', 7];
 
 // 5. Make a new array called onlyStrings. Loop through mixed Data and push only things that are string data type to this new array. 
+
+
+const  onlyStrings = [];
+for(let i = 0; i<mixedData.length; i++){
+    if(typeof mixedData[i] === 'string') {
+        onlyStrings.push(mixedData[i])
+    };
+};
+console.log(onlyStrings);
